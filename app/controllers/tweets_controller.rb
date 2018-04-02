@@ -53,7 +53,7 @@ class TweetsController < ApplicationController
      end
   end
 
-  patch '/tweets/:id' do
+  post '/tweets/:id' do
     if logged_in?
       if params[:content].empty?
         redirect "/tweets/#{@tweet.id}/edit"
