@@ -46,7 +46,7 @@ class TweetsController < ApplicationController
       else
         @user = User.find_by(id: session[:user_id])
         @tweet = Tweet.create(content: params[:content], user_id: @user.id)
-        redirect to "/tweets/#{@tweet.id}"
+        redirect to "/tweets"
       end
      else
       redirect '/login'
