@@ -79,9 +79,9 @@ class TweetsController < ApplicationController
       if params[:content]==""
         redirect "/tweets/#{@tweet.id}/edit"
       end
-      else
-        redirect '/login'
-      end
+    else
+      redirect '/login'
+    end
 
   delete '/tweets/:id/delete' do
     if logged_in?
