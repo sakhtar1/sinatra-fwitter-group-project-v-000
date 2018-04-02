@@ -82,6 +82,7 @@ class TweetsController < ApplicationController
     else
       redirect '/login'
     end
+  end
 
   delete '/tweets/:id/delete' do
     if logged_in?
