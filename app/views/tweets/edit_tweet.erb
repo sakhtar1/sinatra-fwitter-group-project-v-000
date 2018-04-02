@@ -1,7 +1,7 @@
 <h1> Update Tweet </h1>
 <form action="/tweets/<%=@tweet.id%>" method="POST" >
   <input id="hidden" type="hidden" name="_method" value="PATCH">
-  <label> Displaying all Tweets </label>
+  <label> Displaying all Tweets: </label>
   <p><input type="text" id="content" name="content" value="<%=@tweet.content%>"></p><br>
   <input type="submit" value="submit">
 </form>
