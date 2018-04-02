@@ -1,4 +1,4 @@
 <h3>All Tweets</h3>
 <p><% @tweets.each do |tweet| %>
-      <%= tweet.content %>
+      <a href="/tweets/<%=tweet.id%>"><%= tweet.content %>
     <%end%></p>
